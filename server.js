@@ -5,6 +5,7 @@ var url = require('url');
 
 http.createServer(function(req,res) {
     var path = url.parse(req.url).pathname;
+    console.log(path.tos);
     switch(path) {
         case '/':
             res.writeHead(200, {
@@ -14,7 +15,7 @@ http.createServer(function(req,res) {
             res.end();
             break;
         case '/index.html':
-            fs.readFile(  + path, function(error, data) {
+            fs.readFile(__dirname  + path, function(error, data) {
                 if (error) {
                     res.writeHead(404);
                     res.write(error);
@@ -23,7 +24,7 @@ http.createServer(function(req,res) {
                     res.writeHead(200, {
                         'Content-Type': 'text/html'
                     });
-                    res.write(data);
+                    res.write('ok');
                     res.end();
                 }
             });
