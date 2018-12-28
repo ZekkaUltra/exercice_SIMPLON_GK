@@ -1,0 +1,16 @@
+{
+  "name": "simpleforsimplon",
+  "version": "1.0.0",
+  "description": "simple html css",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "AymerFi",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.9",
+    "url": "^0.11.0"
+  }
+}
