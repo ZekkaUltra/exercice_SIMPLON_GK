@@ -1,7 +1,33 @@
-h1 {
-    font-size: 300px;
+#navbar {
+    border: 1px solid black;
+    width: 200px;
+    height: 700px;
+    float: left;  
+   
+}
+#conteneur {
+    border: 1px solid black;
+    height:350px;
+    width: 1015px;
+    display: inline-block;
+}
+#article {
+    border: 1px solid black;
+    height: 350px;
+    width: 1015px;
+    display: inline-block;
 }
 
-.hs{
-    font-size: 300px
+#footer {
+    border: 1px solid black;
+    height:350px;
+    width: 1015px;
+    display: inline-block;
 }
+
+img {
+    border: 1px solid black;
+    height: 300px;
+    float:left;
+}
+
